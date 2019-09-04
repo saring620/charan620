@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> My HTML Document</title>
+	<meta charset="utf-8" />
+	<meta name="description" content="Basic HTML" />
+	<meta name="keyword" content="HTML, CSS" />
+	<meta name="author" content="D.W. Saring" />
+	<style>
+		body {
+			font-family: Cambria;
+		}
+		div {
+			width: 300px;
+			background: yellow;
+			border: 2px solid blue;
+			position: relative;
+		}
+		div > div {
+			width: 50px;
+			height: 50px;
+			border: 2px solid red;
+			margin: 2px auto;
+			padding: 10px;
+			overflow: auto;
+		}
+		.bottomdiv {
+			position: fixed;
+			bottom: 0px;
+			right: 0px;
+		}
+		#relativediv {
+			bottom: 5px;
+			right: 50px;
+			position: relative;
+		}
+		.stickydiv {
+			position: sticky;
+			top: 0;
+		}
+		.absnidiv {
+			position: absolute;
+			bottom: 0;
+			right: 0;
+		}
+		div > div:nth-child(odd) {
+			background-color: red;
+		}
+		div > div:nth-child(even) {
+			background-color: green;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<div class="bottomdiv">1</div>
+		<div id="relativediv">
+			<h2> #2 </h2>
+		</div>
+		<div>3</div>
+		<div class="stickydiv">#4</div>
+		<div class="absnidiv">#5</div>
+		<div>#6</div>
+	</div>
+	<p> Lorem ipsum dolor sit amet, consectetur adipiscing 
+	elit, sed do eiusmod tempor incididunt ut labore et dolore 
+	magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+	ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis 
+	aute irure dolor in reprehenderit in voluptate velit esse 
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint 
+	occaecat cupidatat non proident, sunt in culpa qui officia 
+	deserunt mollit anim id est laborum. Sed ut perspiciatis unde 
+	omnis iste natus error sit voluptatem accusantium doloremque 
+	laudantium, totam rem aperiam, eaque ipsa quae ab illo 
+	inventore veritatis et quasi architecto beatae vitae dicta 
+	sunt explicabo . Nemo enim ipsam voluptatem quia voluptas sit 
+	aspernatur aut odit aut fugit, sed quia consequuntur magni dolores 
+	eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam 
+	est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci 
+	velit, sed quia non numquam eius modi tempora incidunt ut labore 
+	et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, 
+	quis nostrum exercitationem ullam corporis suscipit laboriosam, 
+	nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure 
+	reprehenderit qui in ea voluptate velit esse quam nihil molestiae 
+	consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+</body>
+</html>
